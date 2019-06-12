@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   get '/profile', to: 'users#profile'
   get '/folders', to: 'folders#index'
+  get '/notes', to: 'notes#index'
 end
