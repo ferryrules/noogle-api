@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/profile', to: 'users#profile'
   get '/folders', to: 'folders#index'
   get '/notes', to: 'notes#index'
+  post '/notes', to: 'notes#create'
 end
