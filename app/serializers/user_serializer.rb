@@ -1,8 +1,11 @@
 class UserSerializer < ActiveModel::Serializer
-  # has_many :user_folders
-  has_many :folders, through: :user_folders
-  # has_many :notes, through: :folders
+  has_many :folders
 
+  has_many :user_folders
+  has_many :folders, through: :user_folders
+
+  has_many :notes
+  
   attributes :id, :name, :username, :folders
 
   def folders

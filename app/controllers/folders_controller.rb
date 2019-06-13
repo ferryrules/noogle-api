@@ -5,6 +5,11 @@ class FoldersController < ApplicationController
     render json: folders
   end
 
+  def create
+    folder = Folder.create(folder_params)
+    render json: folder
+  end
+
   def notes
     folder = Folder.find(params[:id])
     render json: folder.notes
