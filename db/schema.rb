@@ -17,17 +17,21 @@ ActiveRecord::Schema.define(version: 2019_06_12_175535) do
 
   create_table "folders", force: :cascade do |t|
     t.string "name"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_folders_on_user_id"
   end
 
   create_table "notes", force: :cascade do |t|
     t.string "note"
     t.string "url"
     t.bigint "folder_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["folder_id"], name: "index_notes_on_folder_id"
+    t.index ["user_id"], name: "index_notes_on_user_id"
   end
 
   create_table "user_folders", force: :cascade do |t|
@@ -48,7 +52,9 @@ ActiveRecord::Schema.define(version: 2019_06_12_175535) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "folders", "users"
   add_foreign_key "notes", "folders"
+  add_foreign_key "notes", "users"
   add_foreign_key "user_folders", "folders"
   add_foreign_key "user_folders", "users"
 end
