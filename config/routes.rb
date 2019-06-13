@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post '/login', to: 'auth#login'
   post '/signup', to: 'users#create'
   get '/profile', to: 'users#profile'
+  get '/users/:id', to: 'users#show'
   get '/users', to: 'users#index'
 
   get '/folders/:id/notes', to: 'folders#notes'
@@ -13,6 +14,7 @@ Rails.application.routes.draw do
   post '/notes', to: 'notes#create'
   get '/notes/:id', to: 'notes#show'
   delete '/notes/:id', to: 'notes#delete'
+
 
   resources :users do
     resources :folders do
