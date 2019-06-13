@@ -9,6 +9,6 @@ Note.create(note: "JavaScript is Ok.", url: "https://www.ilovejs.com", folder_id
 
 UserFolder.create(user_id: 1, folder_id: 1)
 UserFolder.create(user_id: 1, folder_id: 2)
-UserFolder.create(user_id: 1, folder_id: 3)
+
 UserFolder.create(user_id: 2, folder_id: 1)
 UserFolder.create(user_id: 2, folder_id: 2)
