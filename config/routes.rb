@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/folders', to: 'folders#index'
   get '/notes', to: 'notes#index'
   post '/notes', to: 'notes#create'
+  get '/notes/:id', to: 'notes#show'
+  delete '/notes/:id', to: 'notes#delete'
 end
