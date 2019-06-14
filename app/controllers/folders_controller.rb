@@ -5,14 +5,27 @@ class FoldersController < ApplicationController
     render json: folders
   end
 
-  def create
-    folder = Folder.create(folder_params)
+  def show
+    folder = Folder.find(params[:id])
     render json: folder
+  end
+
+  def create
+    # byebug
+    created_folder = Folder.create(folder_params)
+    shared_folder = UserFolder.create(user_id: params[:user_id], folder_id: created_folder.id)
+    # byebug
+    render json: created_folder
   end
 
   def notes
     folder = Folder.find(params[:id])
     render json: folder.notes
+  end
+
+  def delete
+    shared_folder = UserFolder.find(params[:id]).destroy
+    created_folder = Folder.find(params[:id]).destroy
   end
 
   private
