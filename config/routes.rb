@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/folders', to: 'folders#index'
   post '/folders', to: 'folders#create'
   get '/folders/:id', to: 'folders#show'
+  post '/folders/:id', to: 'folders#share'
   delete '/folders/:id', to: 'folders#delete'
 
   get '/notes', to: 'notes#index'

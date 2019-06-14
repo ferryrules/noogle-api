@@ -18,6 +18,12 @@ class FoldersController < ApplicationController
     render json: created_folder
   end
 
+  def share
+    folder = Folder.find(params[:id])
+    shared_folder = UserFolder.create(user_id: params[:user_id], folder_id: folder.id)
+    render json: folder
+  end
+
   def notes
     folder = Folder.find(params[:id])
     render json: folder.notes
