@@ -23,6 +23,6 @@ class NotesController < ApplicationController
   private
 
   def note_params
-    params.permit(:note, :folder_id, :url)
+    params.permit(:note, :user_id, :folder_id, :url)
   end
 end
