@@ -26,18 +26,13 @@ Note.create(note: "Blastoise has the highest base Special Defense of all fully e
 
 
 # FIRE FOLDER/POKEMON
-Folder.create(name: "Fir", user_id: 2)
+Folder.create(name: "Fire", user_id: 2)
 
 Note.create(note: "Growlithe is a Puppy Pokémon, the only other Pokémon that has this species name is Lillipup.", folder_id: 3, user_id: 2)
 Note.create(note: "Arcanine is said to be capable of running over 6,200 miles in a single day and night.", folder_id: 3, user_id: 2)
 Note.create(note: "Vulpix was originally going to be called “Foxfire”.
 ", folder_id: 3, user_id: 2)
 Note.create(note: "Ninetales was misspelled as “Ninetails” in the Pokémon Trading Card Game for the Game Boy Color.", folder_id: 3, user_id: 2)
-
-
-
-
-
 
 
 # NORMAL FOLDER/POKEMON
@@ -55,7 +50,19 @@ Note.create(note: "Fearow weighs 38kg.", folder_id: 4, user_id: 2)
 Note.create(note: "Persian‘s level-up moves are all Normal-type or Dark-type, except the move Power Gem.", folder_id: 4, user_id: 2)
 
 
+#long notes for view/edit feature
+Folder.create(name: "Long-ass-note-and-tab-title-for-User-Interface", user_id: 1)
 
+Note.create(note: "Pokem ipsum dolor sit amet Sigilyph Ludicolo Pignite Mareep Glaceon Pidove. Misty in voluptate velit esse cillum dolore eu fugiat nulla pariatur Growlithe Ninjask Mantyke Glacier Badge Phione. Venusaur Delibird Youngster wants to fight Maractus Girafarig Registeel Metapod. Charmander Exeggcute Thundurus Marsh Badge Floatzel Raticate Blaziken. Rising Badge Unown Masquerain Water Tropius Cherrim Parasect.
+ ", folder_id: 5, user_id: 2)
+Note.create(note: "Dragon Rage Slowking Aron Snorunt Ralts Muk Shroomish. Cascade Badge Pokemon Starly Stantler Beautifly Cottonee Wynaut. Leaf Green Glitch City Lumineon Shelmet Thundershock I'm on the road to Viridian City Teddiursa. Glitch City Regice Vanilluxe Porygon-Z Dragonair Rayquaza Magcargo. Glitch City Wobbuffet in a world we must defend Butterfree Abomasnow Cloyster Audino.", folder_id: 5, user_id: 2)
+
+
+
+Folder.create(name: "Long-ass-note-and-tab-title-for-User-Interface", user_id: 2)
+
+Note.create(note: "Harden Wynaut Roselia Delcatty Cobalion Vigoroth Flaaffy. Fog Badge Eelektrik Smoochum you teach me and I'll teach you Rainbow Badge Togekiss Arbok. Fire Red Strength Chansey Cascade Badge Kricketune Cubchoo Uxie. Harden Panpour Sandslash Audino Claydol Pokemon, it's you and me Walrein. Normal Sapphire Psyduck Clefable Bagon Sawsbuck but nothing happened.", folder_id: 6, user_id: 2)
+Note.create(note: "Water Gun Nidorina Steel Mineral Badge to protect the world from devastation Zubat Shelgon. Vermilion City Exeggcute Goldeen Altaria Gengar Nincada Luxio. Meowth, that's right Metagross Palkia Bibarel Bayleef S.S. Anne Dewott. Excepteur sint occaecat cupidatat non proident Gastrodon Wingull Togetic Archeops Misdreavus searching far and wide. Water Natu Mew Solosis Parasect Wurmple Kirlia.", folder_id: 6, user_id: 2)
 
 
 
