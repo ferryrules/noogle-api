@@ -11,7 +11,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.create(user_params)
+    user = User.create_or_create_by(user_params)
     is_valid = user.valid?
     # in application controller
     if is_valid

@@ -30,6 +30,7 @@ class FoldersController < ApplicationController
   end
 
   def delete
+    debugger
     shared_folder = UserFolder.find(params[:id]).destroy
     created_folder = Folder.find(params[:id]).destroy
   end
