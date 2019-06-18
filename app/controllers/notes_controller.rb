@@ -10,6 +10,11 @@ class NotesController < ApplicationController
     render json: note
   end
 
+  def edit
+    note = Note.find(params[:id])
+    render json: note
+  end
+
   def show
     note = Note.find(params[:id])
     render json: note

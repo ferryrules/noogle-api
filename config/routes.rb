@@ -12,11 +12,13 @@ Rails.application.routes.draw do
   get '/folders/:id', to: 'folders#show'
   post '/folders/:id', to: 'folders#share'
   delete '/folders/:id', to: 'folders#delete'
+  patch '/folders/:id', to: 'folders#edit'
 
   get '/notes', to: 'notes#index'
   post '/notes', to: 'notes#create'
   get '/notes/:id', to: 'notes#show'
   delete '/notes/:id', to: 'notes#delete'
+  patch '/notes/:id', to: 'notes#edit'
 
 
   resources :users do
