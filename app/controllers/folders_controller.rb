@@ -12,6 +12,7 @@ class FoldersController < ApplicationController
 
   def edit
     folder = Folder.find(params[:id])
+    folder.update(folder_params)
     render json: folder
   end
 

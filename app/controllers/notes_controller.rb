@@ -12,6 +12,7 @@ class NotesController < ApplicationController
 
   def edit
     note = Note.find(params[:id])
+    note.update(note_params)
     render json: note
   end
 
